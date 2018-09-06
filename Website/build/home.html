@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | About Me</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/screen.min.css">
+    <link rel="stylesheet" href="static/css/custom.min.css">
+    <script src="static/js/head.min.js"></script>
+</head>
+<body>
+    <script>
+        progressJs().setOptions({ overlayMode: true, theme: 'custom' }).start();
+        if (window.attachEvent) {
+            window.attachEvent('onload', function () { progressJs().end(); });
+        } else {
+            if (window.onload) {
+                var curronload = window.onload;
+                var newonload = function () {
+                    curronload();
+                    progressJs().end();
+                };
+                window.onload = newonload;
+            } else {
+                window.onload = function () { progressJs().end(); };
+            }
+        }</script>
+    <!-- Header-->
+<header class="main-header">
+    <div class="first-nav">
+
+        <div class="container">
+            <nav class="first-nav__links">
+                <!--<ul>
+                    <li><a class="is-selected">english</a></li>
+                    <li><a href="#">français</a></li>
+                    
+                </ul>-->
+            </nav><a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+        </div>
+    </div>
+    <div class="second-nav js-nav">
+
+        <div class="container">
+            <a class="second-nav__logo"><span>JD</span></a>
+            <nav class="menu">
+                <ul>
+                    <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+                    <li><a class="js-link js-anchor" href="#about">About</a></li>
+                    <li><a class="js-link js-anchor" href="http://github.com/saiganeshd">Projects</a></li>
+                   
+                <li><a class="js-link js-anchor" href="#contacts">Contacts</a></li>
+                </ul>
+
+                    <<!--ul>
+                        <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+                        <li><a class="js-link js-anchor" href="#about">About</a></li>
+                        <li><a class="js-link js-anchor" href="#services">Services</a></li>
+                        <li><a class="js-link js-anchor" href="#process">Process</a></li>
+                        <li><a class="js-link js-anchor" href="#projects">Projects</a></li>
+                        <li><a class="js-link js-anchor" href="#testimonials">Testimonials</a></li>
+                        <li><a class="js-link js-anchor" href="#contacts">Contacts</a></li>
+                    </ul>-->
+</nav>
+        </div>
+    </div>
+</header>
+<!-- Home section-->
+<section class="home-section" id="home">
+
+    <div class="home-section__bg"></div>
+    <div class="home-section__overlay">
+        <div class="container">
+            <header class="home-section__header">
+                <h1>SAI GANESH DHATHRIKA</h1>
+                <h2>Full Stack Web Developer.</h2>
+                </header></div></div>
+</section>
+<!-- About section-->
+<section class="about-section" id="about">
+
+    <div class="container">
+        <div class="about-card">
+            <header class="about-card__header">
+                <h2>About me</h2><h4>Currently looking for full time oppurtunities</h4></header>
+            <div class="about-card__info">
+
+                <p>About 1.5 years of experience in software development life cycle (SDLC) in developing & designing user experiences of applications using HTML5, CSS, JavaScript, Meeting W3C standards. Experience in integrating RESTful APIs and web services with applications. Used ES6 next Gen features in projects. Energetic individual, able to communicate effectively, to work collaboratively and resolve problems as well as motivate team members.</p>   
+            <p class="about-card__info-status">
+
+                    <span>Current status:</span> Available for hire
+                </p></div></div></div>
+</section>
+<!-- Projects section
+<section class="common-section" id="projects">
+
+    <header class="common-section__header">
+        <h2>Projects</h2>
+        <p>Donec lorem ante, efficitur ut blandit eu, sollicitudin sed mi</p></header>
+    <div class="projects-wrap">
+        <div class="grid-container">
+            <div class="projects"><figure class="projects__item"><img src="static/images/projects/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/2.jpg" alt="Donec lobortis, est iaculis rutrum feugiat"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Donec lobortis, est iaculis rutrum feugiat</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/5.jpg" alt="Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/6.jpg" alt="Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/3.jpg" alt="Mauris a sem semper, maximus metus vitae, efficitur turpis"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Mauris a sem semper, maximus metus vitae, efficitur turpis</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/4.jpg" alt="Nunc sit amet massa id sem pretium luctus"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Nunc sit amet massa id sem pretium luctus</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/7.jpg" alt="Nunc elementum arcu sit amet erat sodales fringilla"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Nunc elementum arcu sit amet erat sodales fringilla</a></figcaption></figure><figure class="projects__item"><img src="static/images/projects/8.jpg" alt="Cras condimentum venenatis aliquet"><figcaption><a class="icon icon_link" href="#" rel="nofollow">Cras condimentum venenatis aliquet</a></figcaption></figure></div></div></div>
+</section>-->
+
+<!-- Contacts section-->
+<div class="contacts-section" id="contacts">
+
+    <div class="container">
+        <section class="contact-card">
+            <header class="contact-card__header">
+                <h2>Contact information</h2></header>
+            <div class="contact-info">
+                
+                    <div class="contact-info__vcard vcard"><h4 class="fn org">Sai Ganesh Dhathrika</h4>
+                        <p class="role title">Full Stack Web Developer</p>
+                        <p class="icon icon_location"><a class="adr js-anchor" href="#gmap"><span class="country-name">CountryName</span>,&nbsp;<span class="locality">CityName</span></a></p>
+                        <p class="icon icon_mail"><a class="email" href="saiganeshdhathrika@gmail.com">saiganeshdhathrika@gmail.com</a></p>
+                        <p class="icon icon_phone"><a class="email" href="tel:940-395-9429">940-395-9429</a></p></div>
+                    <ul class="contact-info__social">
+                        <li><a class="icon icon_fb" rel="nofollow">I'm on Facebook</a></li>
+                        <li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
+                        <li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
+                        <li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
+                        <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
+                        <li><a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section></div>
+    <div class="gmap" id="gmap"></div>
+</div>
+<!-- Footer-->
+<footer class="main-footer">
+
+    <div class="container">
+        <p class="main-footer__copyright">&copy;&nbsp;<span>John Doe</span></p><a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+        <p class="main-footer__links">Designed by&nbsp;<a href="http://orlovmax.com">Maxim Orlov</a></p></div>
+</footer>
+    <script src="static/js/body.min.js"></script>
+</body>
+</html>
+
+
+
