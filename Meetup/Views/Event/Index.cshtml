@@ -1,0 +1,41 @@
+﻿@model Meetup.ViewModel.EventOldNewViewModel
+@{
+    ViewBag.Title = "Events List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Recent and Upcoming Events List</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+    </tr>
+    @foreach (var events in @Model.NewEvent)
+    {
+        <tr>
+            <td>@Html.ActionLink(events.EventName, "Details", new { id = events.EventId })</td>
+            <td>@events.EventDate</td>
+        </tr>
+    }
+</table>
+
+<div>
+    <hr />
+</div>
+
+<h2>Past Events List</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Event Name</th>
+        <th>Event Date</th>
+    </tr>
+    @foreach (var events in @Model.OldEvent)
+    {
+        <tr>
+            <td>@events.EventName</td>
+            <td>@events.EventDate</td>
+        </tr>
+    }
+</table>

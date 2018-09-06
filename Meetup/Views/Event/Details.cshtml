@@ -1,0 +1,59 @@
+﻿@model Meetup.ViewModel.ParticipantViewModel
+@{
+    ViewBag.Title = "Event Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Event Details</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Event Name </th>
+        <td>@Model.Event.EventName</td>
+    </tr>
+    <tr>
+        <th>City </th>
+        <td>@Model.Event.City</td>
+    </tr>
+    <tr>
+        <th>Event Date </th>
+        <td>@Model.Event.EventDate</td>
+    </tr>
+</table>
+
+@if (@Model.CheckPastEvent == false)
+{
+    <ul>
+        @if (@Model.CheckRegistration == false)
+        {
+            <li>@Html.ActionLink("Register for this Event", "Register", new { id = @Model.Event.EventId }, null)</li>
+        
+        }
+        else
+        {
+            <li>You have already registered for this event!</li>
+        }
+
+        <li>@Html.ActionLink("Back to Event List", "Index")</li>
+    </ul>
+}
+
+<div>
+    @if (@Model.Users.Count == 0)
+    {
+        <h3>No user has registered for this event</h3>
+    }
+    else
+    {
+        <h3>List of visitors attending @Model.Event.EventName</h3>
+        <div>
+            <ul>
+                @foreach (var user in @Model.Users)
+                {
+                    <li>@user.UserName</li>
+                }
+            </ul>
+        </div>
+    }
+</div>
+

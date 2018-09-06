@@ -1,0 +1,11 @@
+﻿@model Meetup.Models.Event
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>You have successfully registered for @Model.EventName</h2>
+
+<div>
+    @Html.ActionLink("Back to Event List", "Index")
+</div>
